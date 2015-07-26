@@ -1,0 +1,39 @@
+
+done 
+
+api 
+
+rest 
+get   			OK(200) + jsonArray
+post{json}  Created (202) 
+delete/id   NoContent (204)
+
+messages BasketActor
+heen: 
+AddArticle
+DeleteArticle
+ListArticles
+
+terug 
+ArticleAdded
+ArticleDeleted
+ArticleList
+
+
+
+
+not done (geen tijd) (first do it, then do it right, than do it fast, ..) 
+
+als meerdere keren hetzelfde artikel wordt toegevoegd wordt er een nieuw item gecreeerd.
+
+de rest interface en backet actor worden niet in een actor gemaakt en dus geen supervisor strategy
+
+een id wordt niet gegenereerd, maar hardcoded meegegeven. 
+(dit is eigenlijk dan geen post maar een put (idempotent) 
+
+er is geen get by id in de api ( is ook niet per se nodig) 
+
+een post (add) geeft geen id terug. 
+
+een fout situatie geeft nu een BadRequest en zouden andere soorten responses gegeven kunnen worden (InternalServerError, MethodNotAllowed, enz)  
+
